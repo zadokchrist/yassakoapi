@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="API" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_PayBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:PayBill" />
+  </wsdl:message>
+  <wsdl:message name="IService_PayBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PayBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ValidateBillAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBillAccount" />
+  </wsdl:message>
+  <wsdl:message name="IService_ValidateBillAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBillAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckBillStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBillStatus" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckBillStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBillStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDSTVProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSTVProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDSTVProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSTVProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBalance" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_TopUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:TopUp" />
+  </wsdl:message>
+  <wsdl:message name="IService_TopUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TopUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDueAmountAndDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDueAmountAndDate" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDueAmountAndDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDueAmountAndDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTelcoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTelcoList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTelcoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTelcoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_AirTimeTopUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:AirTimeTopUp" />
+  </wsdl:message>
+  <wsdl:message name="IService_AirTimeTopUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AirTimeTopUpResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="PayBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/PayBill" message="tns:IService_PayBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/PayBillResponse" message="tns:IService_PayBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBillAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ValidateBillAccount" message="tns:IService_ValidateBillAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ValidateBillAccountResponse" message="tns:IService_ValidateBillAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBillStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckBillStatus" message="tns:IService_CheckBillStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckBillStatusResponse" message="tns:IService_CheckBillStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSTVProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDSTVProduct" message="tns:IService_GetDSTVProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDSTVProductResponse" message="tns:IService_GetDSTVProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckBalance" message="tns:IService_CheckBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckBalanceResponse" message="tns:IService_CheckBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TopUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/TopUp" message="tns:IService_TopUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/TopUpResponse" message="tns:IService_TopUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueAmountAndDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDueAmountAndDate" message="tns:IService_GetDueAmountAndDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDueAmountAndDateResponse" message="tns:IService_GetDueAmountAndDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTelcoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetTelcoList" message="tns:IService_GetTelcoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetTelcoListResponse" message="tns:IService_GetTelcoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AirTimeTopUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/AirTimeTopUp" message="tns:IService_AirTimeTopUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/AirTimeTopUpResponse" message="tns:IService_AirTimeTopUp_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PayBill">
+      <soap:operation soapAction="http://tempuri.org/IService/PayBill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBillAccount">
+      <soap:operation soapAction="http://tempuri.org/IService/ValidateBillAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBillStatus">
+      <soap:operation soapAction="http://tempuri.org/IService/CheckBillStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSTVProduct">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDSTVProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalance">
+      <soap:operation soapAction="http://tempuri.org/IService/CheckBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopUp">
+      <soap:operation soapAction="http://tempuri.org/IService/TopUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDueAmountAndDate">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDueAmountAndDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTelcoList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetTelcoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AirTimeTopUp">
+      <soap:operation soapAction="http://tempuri.org/IService/AirTimeTopUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="API">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

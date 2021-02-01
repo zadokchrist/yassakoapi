@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
+  <xs:element name="PayBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sctxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="txntype" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payeecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="accountno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sctrxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emtxid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="txnfee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="receiptno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBillAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sctxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payeecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="accountno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBillAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sctrxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBillStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sctxnid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBillStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sctrxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emtxid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="txnfee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="receiptno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDSTVProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDSTVProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="product" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="scbalance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sccommbalance" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TopUp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bankcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="refno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TopUpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDueAmountAndDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sctxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payeecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="accountno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remark2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDueAmountAndDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sctrxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTelcoList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTelcoListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" minOccurs="0" name="GetTelcoListResult" nillable="true" type="q1:PinProdList" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AirTimeTopUp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sctxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trxtype" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cardid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pinKeyword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AirTimeTopUpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sctrxnid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emtrxid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

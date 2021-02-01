@@ -1,0 +1,33 @@
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csproj.CoreCompileInputs.cache
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+C:\Users\Namayanja Swabra\Desktop\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+C:\Users\Administrator\Desktop\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csproj.CoreCompileInputs.cache
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+D:\Projects\Test\Yassako\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
