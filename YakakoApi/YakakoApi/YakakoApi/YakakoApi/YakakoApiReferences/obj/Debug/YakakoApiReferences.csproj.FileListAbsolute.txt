@@ -31,3 +31,9 @@ D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReference
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll.config
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Debug\YakakoApiReferences.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.csprojAssemblyReference.cache
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Debug\YakakoApiReferences.pdb

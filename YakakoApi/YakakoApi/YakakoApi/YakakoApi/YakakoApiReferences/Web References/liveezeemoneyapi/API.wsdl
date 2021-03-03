@@ -2,10 +2,10 @@
 <wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="API" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
-      <xsd:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
+      <xsd:import schemaLocation="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService_PayBill_InputMessage">
@@ -50,6 +50,12 @@
   <wsdl:message name="IService_GetDueAmountAndDate_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDueAmountAndDateResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_InsuranceSearchCustomerInfoByCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsuranceSearchCustomerInfoByCard" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsuranceSearchCustomerInfoByCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsuranceSearchCustomerInfoByCardResponse" />
+  </wsdl:message>
   <wsdl:message name="IService_GetTelcoList_InputMessage">
     <wsdl:part name="parameters" element="tns:GetTelcoList" />
   </wsdl:message>
@@ -90,6 +96,10 @@
     <wsdl:operation name="GetDueAmountAndDate">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDueAmountAndDate" message="tns:IService_GetDueAmountAndDate_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDueAmountAndDateResponse" message="tns:IService_GetDueAmountAndDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsuranceSearchCustomerInfoByCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsuranceSearchCustomerInfoByCard" message="tns:IService_InsuranceSearchCustomerInfoByCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsuranceSearchCustomerInfoByCardResponse" message="tns:IService_InsuranceSearchCustomerInfoByCard_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetTelcoList">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetTelcoList" message="tns:IService_GetTelcoList_InputMessage" />
@@ -165,6 +175,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="InsuranceSearchCustomerInfoByCard">
+      <soap:operation soapAction="http://tempuri.org/IService/InsuranceSearchCustomerInfoByCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetTelcoList">
       <soap:operation soapAction="http://tempuri.org/IService/GetTelcoList" style="document" />
       <wsdl:input>
@@ -186,7 +205,7 @@
   </wsdl:binding>
   <wsdl:service name="API">
     <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
-      <soap:address location="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc" />
+      <soap:address location="http://ugapi.ezeemoney.biz/v1/API.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

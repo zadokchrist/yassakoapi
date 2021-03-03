@@ -22,22 +22,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2007 01:50:34</publishTime>
     </File>
     <File Include="bin/YakakoApi.dll">
-      <publishTime>01/07/2021 16:28:59</publishTime>
+      <publishTime>03/03/2021 11:06:00</publishTime>
     </File>
     <File Include="bin/YakakoApi.pdb">
-      <publishTime>01/07/2021 16:28:59</publishTime>
+      <publishTime>03/03/2021 11:06:00</publishTime>
     </File>
     <File Include="bin/YakakoApiReferences.dll">
-      <publishTime>08/14/2020 12:10:33</publishTime>
+      <publishTime>03/03/2021 11:00:31</publishTime>
     </File>
     <File Include="bin/YakakoApiReferences.dll.config">
-      <publishTime>06/27/2019 16:42:38</publishTime>
+      <publishTime>03/03/2021 11:00:14</publishTime>
     </File>
     <File Include="bin/YakakoApiReferences.pdb">
-      <publishTime>08/14/2020 12:10:33</publishTime>
+      <publishTime>03/03/2021 11:00:31</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/26/2020 11:45:29</publishTime>
+      <publishTime>03/03/2021 11:06:01</publishTime>
     </File>
     <File Include="YakakoApi.asmx">
       <publishTime>02/22/2019 15:16:38</publishTime>

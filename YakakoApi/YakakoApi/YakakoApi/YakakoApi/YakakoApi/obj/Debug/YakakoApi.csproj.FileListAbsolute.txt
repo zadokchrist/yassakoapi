@@ -74,3 +74,13 @@ D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debu
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.dll
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.pdb
 D:\Projects\Live\Apis\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.csprojAssemblyReference.cache
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApi.dll.config
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApi.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApi.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.dll.config
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.csprojAssemblyReference.cache
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.csproj.CopyComplete
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Debug\YakakoApi.pdb

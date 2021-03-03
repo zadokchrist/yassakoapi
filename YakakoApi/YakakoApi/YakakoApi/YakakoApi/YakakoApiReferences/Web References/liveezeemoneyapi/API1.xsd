@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
+  <xs:import schemaLocation="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UGD_EMTerminalAPI.Model" />
   <xs:element name="PayBill">
     <xs:complexType>
       <xs:sequence>
@@ -185,6 +185,26 @@
         <xs:element minOccurs="0" name="info3" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="info4" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="info5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsuranceSearchCustomerInfoByCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sccode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cardno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsuranceSearchCustomerInfoByCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="res" type="xs:boolean" />
+        <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="respmsg" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

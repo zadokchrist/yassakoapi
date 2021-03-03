@@ -133,10 +133,10 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>YakakoApiReferences_ezeemoneyapi_API</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc%3fwsdl">
+    <WebReferenceUrl Include="http://ugapi.ezeemoney.biz/v1/API.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\liveezeemoneyapi\</RelPath>
-      <UpdateFromURL>http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc%3fwsdl</UpdateFromURL>
+      <UpdateFromURL>http://ugapi.ezeemoney.biz/v1/API.svc</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
@@ -144,6 +144,9 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>YakakoApiReferences_liveezeemoneyapi_API</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\liveezeemoneyapi\API.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@
       <Value Profile="(Default)">http://mmpuchong.mobile-money.com:1668/EMTerminalAPI/API.svc</Value>
     </Setting>
     <Setting Name="YakakoApiReferences_liveezeemoneyapi_API" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc</Value>
+      <Value Profile="(Default)">http://ugapi.ezeemoney.biz/v1/API.svc</Value>
     </Setting>
   </Settings>
 </SettingsFile>

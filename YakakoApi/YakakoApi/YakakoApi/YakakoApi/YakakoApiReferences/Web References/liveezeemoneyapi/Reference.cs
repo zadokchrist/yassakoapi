@@ -44,6 +44,8 @@ namespace YakakoApiReferences.liveezeemoneyapi {
         
         private System.Threading.SendOrPostCallback GetDueAmountAndDateOperationCompleted;
         
+        private System.Threading.SendOrPostCallback InsuranceSearchCustomerInfoByCardOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetTelcoListOperationCompleted;
         
         private System.Threading.SendOrPostCallback AirTimeTopUpOperationCompleted;
@@ -106,6 +108,9 @@ namespace YakakoApiReferences.liveezeemoneyapi {
         
         /// <remarks/>
         public event GetDueAmountAndDateCompletedEventHandler GetDueAmountAndDateCompleted;
+        
+        /// <remarks/>
+        public event InsuranceSearchCustomerInfoByCardCompletedEventHandler InsuranceSearchCustomerInfoByCardCompleted;
         
         /// <remarks/>
         public event GetTelcoListCompletedEventHandler GetTelcoListCompleted;
@@ -455,6 +460,45 @@ namespace YakakoApiReferences.liveezeemoneyapi {
             if ((this.GetDueAmountAndDateCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetDueAmountAndDateCompleted(this, new GetDueAmountAndDateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService/InsuranceSearchCustomerInfoByCard", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void InsuranceSearchCustomerInfoByCard([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sccode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string userid, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string cardno, out bool res, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool resSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] out string respcode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] out string respmsg, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] out string response) {
+            object[] results = this.Invoke("InsuranceSearchCustomerInfoByCard", new object[] {
+                        sccode,
+                        userid,
+                        password,
+                        cardno});
+            res = ((bool)(results[0]));
+            resSpecified = ((bool)(results[1]));
+            respcode = ((string)(results[2]));
+            respmsg = ((string)(results[3]));
+            response = ((string)(results[4]));
+        }
+        
+        /// <remarks/>
+        public void InsuranceSearchCustomerInfoByCardAsync(string sccode, string userid, string password, string cardno) {
+            this.InsuranceSearchCustomerInfoByCardAsync(sccode, userid, password, cardno, null);
+        }
+        
+        /// <remarks/>
+        public void InsuranceSearchCustomerInfoByCardAsync(string sccode, string userid, string password, string cardno, object userState) {
+            if ((this.InsuranceSearchCustomerInfoByCardOperationCompleted == null)) {
+                this.InsuranceSearchCustomerInfoByCardOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsuranceSearchCustomerInfoByCardOperationCompleted);
+            }
+            this.InvokeAsync("InsuranceSearchCustomerInfoByCard", new object[] {
+                        sccode,
+                        userid,
+                        password,
+                        cardno}, this.InsuranceSearchCustomerInfoByCardOperationCompleted, userState);
+        }
+        
+        private void OnInsuranceSearchCustomerInfoByCardOperationCompleted(object arg) {
+            if ((this.InsuranceSearchCustomerInfoByCardCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InsuranceSearchCustomerInfoByCardCompleted(this, new InsuranceSearchCustomerInfoByCardCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1234,6 +1278,64 @@ namespace YakakoApiReferences.liveezeemoneyapi {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[7]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
+    public delegate void InsuranceSearchCustomerInfoByCardCompletedEventHandler(object sender, InsuranceSearchCustomerInfoByCardCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InsuranceSearchCustomerInfoByCardCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InsuranceSearchCustomerInfoByCardCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool res {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool resSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string respcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string respmsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+        
+        /// <remarks/>
+        public string response {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[4]));
             }
         }
     }

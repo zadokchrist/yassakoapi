@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd3" filename="API.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd2" filename="API0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd0" filename="API1.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?xsd=xsd1" filename="API2.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://ug.ezeemoney.biz:8082/EMTerminalAPI/v1/API.svc?wsdl" filename="API.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd2" filename="API.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd3" filename="API0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd0" filename="API1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?xsd=xsd1" filename="API2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?disco" filename="API.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://ugapi.ezeemoney.biz/v1/API.svc?wsdl" filename="API.wsdl" />
   </Results>
 </DiscoveryClientResultsFile>
