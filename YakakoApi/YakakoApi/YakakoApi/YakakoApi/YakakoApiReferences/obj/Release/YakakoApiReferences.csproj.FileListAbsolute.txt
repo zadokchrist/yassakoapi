@@ -1,0 +1,7 @@
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Release\YakakoApiReferences.dll.config
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Release\YakakoApiReferences.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Release\YakakoApiReferences.XmlSerializers.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\bin\Release\YakakoApiReferences.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Release\YakakoApiReferences.dll
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Release\YakakoApiReferences.pdb
+D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApiReferences\obj\Release\YakakoApiReferences.XmlSerializers.dll

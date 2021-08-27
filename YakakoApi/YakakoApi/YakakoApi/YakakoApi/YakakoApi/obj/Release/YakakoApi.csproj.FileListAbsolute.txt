@@ -52,7 +52,6 @@ D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\Yaka
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.dll
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.pdb
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\bin\YakakoApiReferences.dll.config
-D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Release\YakakoApi.csprojAssemblyReference.cache
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Release\YakakoApi.csproj.CopyComplete
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Release\YakakoApi.dll
 D:\Projects\Live\working directory\yassakoapi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\YakakoApi\obj\Release\YakakoApi.pdb

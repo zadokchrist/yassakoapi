@@ -31,7 +31,7 @@ namespace YakakoApi
                     resp.ErrorCode = "10";
                     resp.ErrorDescription = logic.GetErrorDescription(resp.ErrorCode);
                 }
-                else if (!logic.IsValidCustomerNumber(this.CustTel))
+                else if (!logic.IsValidCustomerNumberLoanRep(this.CustTel))
                 {
                     resp.ErrorCode = "10";
                     resp.ErrorDescription = logic.GetErrorDescription(resp.ErrorCode);

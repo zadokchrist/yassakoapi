@@ -73,8 +73,18 @@ namespace YakakoApi
                             customer.CustBalance = CustomerLoanBalance(req.MeterNo, req.CustomerTel).ToString();
                             dh.InsertCustomer(req.MeterNo, name, req.UtilityCode);
                             resp.errorCode = "0";
-                            customer.firstname = splitedname[0];
-                            customer.lastname = splitedname[1];
+                            int arraynamelength = splitedname.Length;
+                            if (arraynamelength>1)
+                            {
+                                customer.firstname = splitedname[0];
+                                customer.lastname = splitedname[1];
+                            }
+                            else
+                            {
+                                customer.firstname = splitedname[0];
+                                customer.lastname = "";
+                            }
+                            
                             customer.customertype = validatemeterresp.info3;
                             resp.MeterNo += "Name : " + customer.firstname + " " + customer.lastname;
                         }
@@ -116,6 +126,33 @@ namespace YakakoApi
                 if (formatednumber.Length.Equals(12))
                 {
                     isValidCustomer = IsWhitelisted(formatednumber);
+                }
+                else
+                {
+                    isValidCustomer = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogError("IsValidCustomerNumber", "AppLogic", ex.Message);
+            }
+            return isValidCustomer;
+        }
+
+        /// <summary>
+        /// Checks whether the number is valid abd as well whitelisted
+        /// </summary>
+        /// <param name="customerTel"></param>
+        /// <returns></returns>
+        internal bool IsValidCustomerNumberLoanRep(string customerTel)
+        {
+            bool isValidCustomer = false;
+            try
+            {
+                string formatednumber = FormatTelephone256(customerTel);
+                if (formatednumber.Length.Equals(12))
+                {
+                    return true;
                 }
                 else
                 {
@@ -651,7 +688,9 @@ namespace YakakoApi
                 }
                 else
                 {
-                    maxamt = "2000";// return the default value if the system has failed to compute the credit score
+                    // get default loan Limit from customer
+
+                    maxamt = dh.GetWhitelistedNumber(formatedmsisdn).Rows[0]["YassakoLimit"].ToString();//"2000";// return the default value if the system has failed to compute the credit score
                 }
             }
             catch (Exception ex)
